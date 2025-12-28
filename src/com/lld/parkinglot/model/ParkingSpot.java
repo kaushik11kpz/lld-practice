@@ -3,6 +3,7 @@ package com.lld.parkinglot.model;
 public class ParkingSpot {
 	private int Id;
 	private Car parkedCar;
+	VehicleType vehivcleType;
 	
 	public ParkingSpot(int Id) {
 		this.Id = Id;
@@ -10,6 +11,10 @@ public class ParkingSpot {
 	
 	public int getId(){
 		return Id;
+	}
+	
+	public VehicleType getVehicleType() {
+		return VehicleType.Car;
 	}
 	
 	public boolean isFree() {
